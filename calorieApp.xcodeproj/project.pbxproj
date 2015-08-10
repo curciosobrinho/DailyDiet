@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2019D8B31B755F8C000703C2 /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019D8B21B755F8C000703C2 /* UsersTableViewController.m */; };
+		2045BADB1B742B5400A435D2 /* PFActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAD21B742B5400A435D2 /* PFActionButton.m */; };
+		2045BADC1B742B5400A435D2 /* PFDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAD41B742B5400A435D2 /* PFDismissButton.m */; };
+		2045BADD1B742B5400A435D2 /* PFPrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAD61B742B5400A435D2 /* PFPrimaryButton.m */; };
+		2045BADE1B742B5400A435D2 /* PFTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAD81B742B5400A435D2 /* PFTextButton.m */; };
+		2045BADF1B742B5400A435D2 /* PFLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BADA1B742B5400A435D2 /* PFLoadingView.m */; };
+		2045BAE91B742B8B00A435D2 /* PFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAE21B742B8B00A435D2 /* PFAlertView.m */; };
+		2045BAEA1B742B8B00A435D2 /* PFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAE41B742B8B00A435D2 /* PFColor.m */; };
+		2045BAEC1B742B8B00A435D2 /* PFRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAE81B742B8B00A435D2 /* PFRect.m */; };
+		2045BAF01B742E0E00A435D2 /* PFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAEE1B742E0E00A435D2 /* PFImageCache.m */; };
+		2045BAF31B742EEB00A435D2 /* PFResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAF21B742EEB00A435D2 /* PFResources.m */; };
+		2045BAF61B742F0600A435D2 /* PFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2045BAF51B742F0600A435D2 /* PFImage.m */; };
+		206078951B700FE00097D507 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2060788F1B700FE00097D507 /* Bolts.framework */; };
+		206078961B700FE10097D507 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078901B700FE00097D507 /* Parse.framework */; };
+		206078971B700FE10097D507 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078911B700FE00097D507 /* ParseCrashReporting.framework */; };
+		206078981B700FE10097D507 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078921B700FE00097D507 /* ParseFacebookUtils.framework */; };
+		206078991B700FE10097D507 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078931B700FE00097D507 /* ParseFacebookUtilsV4.framework */; };
+		2060789A1B700FE10097D507 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078941B700FE00097D507 /* ParseUI.framework */; };
+		2060789C1B70100E0097D507 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2060789B1B70100E0097D507 /* AudioToolbox.framework */; };
+		2060789E1B7010150097D507 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2060789D1B7010150097D507 /* CFNetwork.framework */; };
+		206078A01B70101F0097D507 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2060789F1B70101F0097D507 /* CoreGraphics.framework */; };
+		206078A21B7010260097D507 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078A11B7010260097D507 /* CoreLocation.framework */; };
+		206078A41B70102D0097D507 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078A31B70102D0097D507 /* QuartzCore.framework */; };
+		206078A61B7010350097D507 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078A51B7010350097D507 /* Security.framework */; };
+		206078A81B70103F0097D507 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078A71B70103F0097D507 /* StoreKit.framework */; };
+		206078AA1B7010490097D507 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078A91B7010490097D507 /* SystemConfiguration.framework */; };
+		206078AC1B7010530097D507 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078AB1B7010530097D507 /* libz.dylib */; };
+		206078AE1B70105E0097D507 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078AD1B70105E0097D507 /* libsqlite3.dylib */; };
+		206078B01B70106D0097D507 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078AF1B70106D0097D507 /* Accounts.framework */; };
+		206078B21B7010730097D507 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206078B11B7010730097D507 /* Social.framework */; };
+		206078B51B70200A0097D507 /* empty-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 206078B41B70200A0097D507 /* empty-image.png */; };
+		206078B71B7023C20097D507 /* Meal-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206078B61B7023C20097D507 /* Meal-50@2x.png */; };
+		206078B91B7023C80097D507 /* Settings-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206078B81B7023C80097D507 /* Settings-50@2x.png */; };
+		206078BB1B7023CF0097D507 /* Todo List-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206078BA1B7023CF0097D507 /* Todo List-50@2x.png */; };
+		206078C01B702A4F0097D507 /* NewMealTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206078BF1B702A4F0097D507 /* NewMealTableViewController.m */; };
+		206A55E51B70F85200B4C22F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206A55E41B70F85200B4C22F /* FacebookSDK.framework */; };
+		206A562E1B71178000B4C22F /* MealsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A562D1B71178000B4C22F /* MealsTableViewController.m */; };
+		206A56311B71298200B4C22F /* HelperFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A56301B71298200B4C22F /* HelperFunctions.m */; };
+		209128E81B6E86780072806F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 209128E71B6E86780072806F /* main.m */; };
+		209128EB1B6E86780072806F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 209128EA1B6E86780072806F /* AppDelegate.m */; };
+		209128EE1B6E86780072806F /* DailyGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209128ED1B6E86780072806F /* DailyGoalViewController.m */; };
+		209128F41B6E86780072806F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209128F21B6E86780072806F /* Main.storyboard */; };
+		209128F61B6E86780072806F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209128F51B6E86780072806F /* Images.xcassets */; };
+		209128F91B6E86780072806F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209128F71B6E86780072806F /* LaunchScreen.xib */; };
+		209129051B6E86780072806F /* calorieAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 209129041B6E86780072806F /* calorieAppTests.m */; };
+		209C501B1B72CB4D00589307 /* FirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209C501A1B72CB4D00589307 /* FirstCell.xib */; };
+		20A7E8281B7417D500FF749B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A7E8271B7417D500FF749B /* SettingsViewController.m */; };
+		20F5B1991B776E6D005391C1 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5B1981B776E6D005391C1 /* FilterViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		209128FF1B6E86780072806F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209128DA1B6E86780072806F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 209128E11B6E86780072806F;
+			remoteInfo = calorieApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2019D8B11B755F8C000703C2 /* UsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
+		2019D8B21B755F8C000703C2 /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
+		2045BAD11B742B5400A435D2 /* PFActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFActionButton.h; sourceTree = "<group>"; };
+		2045BAD21B742B5400A435D2 /* PFActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFActionButton.m; sourceTree = "<group>"; };
+		2045BAD31B742B5400A435D2 /* PFDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFDismissButton.h; sourceTree = "<group>"; };
+		2045BAD41B742B5400A435D2 /* PFDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFDismissButton.m; sourceTree = "<group>"; };
+		2045BAD51B742B5400A435D2 /* PFPrimaryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPrimaryButton.h; sourceTree = "<group>"; };
+		2045BAD61B742B5400A435D2 /* PFPrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFPrimaryButton.m; sourceTree = "<group>"; };
+		2045BAD71B742B5400A435D2 /* PFTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTextButton.h; sourceTree = "<group>"; };
+		2045BAD81B742B5400A435D2 /* PFTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTextButton.m; sourceTree = "<group>"; };
+		2045BAD91B742B5400A435D2 /* PFLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFLoadingView.h; path = ../PFLoadingView.h; sourceTree = "<group>"; };
+		2045BADA1B742B5400A435D2 /* PFLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFLoadingView.m; path = ../PFLoadingView.m; sourceTree = "<group>"; };
+		2045BAE11B742B8B00A435D2 /* PFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAlertView.h; sourceTree = "<group>"; };
+		2045BAE21B742B8B00A435D2 /* PFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAlertView.m; sourceTree = "<group>"; };
+		2045BAE31B742B8B00A435D2 /* PFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFColor.h; sourceTree = "<group>"; };
+		2045BAE41B742B8B00A435D2 /* PFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFColor.m; sourceTree = "<group>"; };
+		2045BAE71B742B8B00A435D2 /* PFRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRect.h; sourceTree = "<group>"; };
+		2045BAE81B742B8B00A435D2 /* PFRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRect.m; sourceTree = "<group>"; };
+		2045BAED1B742E0E00A435D2 /* PFImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImageCache.h; sourceTree = "<group>"; };
+		2045BAEE1B742E0E00A435D2 /* PFImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImageCache.m; sourceTree = "<group>"; };
+		2045BAEF1B742E0E00A435D2 /* PFLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLocalization.h; sourceTree = "<group>"; };
+		2045BAF11B742EEB00A435D2 /* PFResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFResources.h; path = ../PFResources.h; sourceTree = "<group>"; };
+		2045BAF21B742EEB00A435D2 /* PFResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFResources.m; path = ../PFResources.m; sourceTree = "<group>"; };
+		2045BAF41B742F0600A435D2 /* PFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImage.h; sourceTree = "<group>"; };
+		2045BAF51B742F0600A435D2 /* PFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImage.m; sourceTree = "<group>"; };
+		2060788F1B700FE00097D507 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		206078901B700FE00097D507 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		206078911B700FE00097D507 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		206078921B700FE00097D507 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		206078931B700FE00097D507 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		206078941B700FE00097D507 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		2060789B1B70100E0097D507 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2060789D1B7010150097D507 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2060789F1B70101F0097D507 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		206078A11B7010260097D507 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		206078A31B70102D0097D507 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		206078A51B7010350097D507 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		206078A71B70103F0097D507 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		206078A91B7010490097D507 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		206078AB1B7010530097D507 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		206078AD1B70105E0097D507 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		206078AF1B70106D0097D507 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		206078B11B7010730097D507 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		206078B41B70200A0097D507 /* empty-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "empty-image.png"; path = "../../../../../Downloads/empty-image.png"; sourceTree = "<group>"; };
+		206078B61B7023C20097D507 /* Meal-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Meal-50@2x.png"; sourceTree = "<group>"; };
+		206078B81B7023C80097D507 /* Settings-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-50@2x.png"; sourceTree = "<group>"; };
+		206078BA1B7023CF0097D507 /* Todo List-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Todo List-50@2x.png"; sourceTree = "<group>"; };
+		206078BE1B702A4F0097D507 /* NewMealTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMealTableViewController.h; sourceTree = "<group>"; };
+		206078BF1B702A4F0097D507 /* NewMealTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMealTableViewController.m; sourceTree = "<group>"; };
+		206A55E41B70F85200B4C22F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK.framework; sourceTree = "<group>"; };
+		206A562C1B71178000B4C22F /* MealsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealsTableViewController.h; sourceTree = "<group>"; };
+		206A562D1B71178000B4C22F /* MealsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealsTableViewController.m; sourceTree = "<group>"; };
+		206A562F1B71298200B4C22F /* HelperFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFunctions.h; sourceTree = "<group>"; };
+		206A56301B71298200B4C22F /* HelperFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperFunctions.m; sourceTree = "<group>"; };
+		209128E21B6E86780072806F /* calorieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calorieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		209128E61B6E86780072806F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209128E71B6E86780072806F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		209128E91B6E86780072806F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		209128EA1B6E86780072806F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		209128EC1B6E86780072806F /* DailyGoalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyGoalViewController.h; sourceTree = "<group>"; };
+		209128ED1B6E86780072806F /* DailyGoalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyGoalViewController.m; sourceTree = "<group>"; };
+		209128F31B6E86780072806F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		209128F51B6E86780072806F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		209128F81B6E86780072806F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		209128FE1B6E86780072806F /* calorieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calorieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		209129031B6E86780072806F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209129041B6E86780072806F /* calorieAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calorieAppTests.m; sourceTree = "<group>"; };
+		209C501A1B72CB4D00589307 /* FirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstCell.xib; sourceTree = "<group>"; };
+		20A7E8261B7417D500FF749B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		20A7E8271B7417D500FF749B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		20ECD7401B73F6C300536D47 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		20F5B1971B776E6D005391C1 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		20F5B1981B776E6D005391C1 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		209128DF1B6E86780072806F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206078B21B7010730097D507 /* Social.framework in Frameworks */,
+				206A55E51B70F85200B4C22F /* FacebookSDK.framework in Frameworks */,
+				206078B01B70106D0097D507 /* Accounts.framework in Frameworks */,
+				206078AE1B70105E0097D507 /* libsqlite3.dylib in Frameworks */,
+				206078AC1B7010530097D507 /* libz.dylib in Frameworks */,
+				206078AA1B7010490097D507 /* SystemConfiguration.framework in Frameworks */,
+				206078A81B70103F0097D507 /* StoreKit.framework in Frameworks */,
+				206078A61B7010350097D507 /* Security.framework in Frameworks */,
+				206078A41B70102D0097D507 /* QuartzCore.framework in Frameworks */,
+				206078A21B7010260097D507 /* CoreLocation.framework in Frameworks */,
+				206078A01B70101F0097D507 /* CoreGraphics.framework in Frameworks */,
+				2060789E1B7010150097D507 /* CFNetwork.framework in Frameworks */,
+				2060789C1B70100E0097D507 /* AudioToolbox.framework in Frameworks */,
+				2060789A1B700FE10097D507 /* ParseUI.framework in Frameworks */,
+				206078961B700FE10097D507 /* Parse.framework in Frameworks */,
+				206078971B700FE10097D507 /* ParseCrashReporting.framework in Frameworks */,
+				206078981B700FE10097D507 /* ParseFacebookUtils.framework in Frameworks */,
+				206078951B700FE00097D507 /* Bolts.framework in Frameworks */,
+				206078991B700FE10097D507 /* ParseFacebookUtilsV4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209128FB1B6E86780072806F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2045BAD01B742B5400A435D2 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2045BAD11B742B5400A435D2 /* PFActionButton.h */,
+				2045BAD21B742B5400A435D2 /* PFActionButton.m */,
+				2045BAD31B742B5400A435D2 /* PFDismissButton.h */,
+				2045BAD41B742B5400A435D2 /* PFDismissButton.m */,
+				2045BAD51B742B5400A435D2 /* PFPrimaryButton.h */,
+				2045BAD61B742B5400A435D2 /* PFPrimaryButton.m */,
+				2045BAD71B742B5400A435D2 /* PFTextButton.h */,
+				2045BAD81B742B5400A435D2 /* PFTextButton.m */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		2045BAE01B742B8B00A435D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2045BAD91B742B5400A435D2 /* PFLoadingView.h */,
+				2045BADA1B742B5400A435D2 /* PFLoadingView.m */,
+				2045BAF11B742EEB00A435D2 /* PFResources.h */,
+				2045BAF21B742EEB00A435D2 /* PFResources.m */,
+				2045BAED1B742E0E00A435D2 /* PFImageCache.h */,
+				2045BAEE1B742E0E00A435D2 /* PFImageCache.m */,
+				2045BAEF1B742E0E00A435D2 /* PFLocalization.h */,
+				2045BAE11B742B8B00A435D2 /* PFAlertView.h */,
+				2045BAE21B742B8B00A435D2 /* PFAlertView.m */,
+				2045BAF41B742F0600A435D2 /* PFImage.h */,
+				2045BAF51B742F0600A435D2 /* PFImage.m */,
+				2045BAE31B742B8B00A435D2 /* PFColor.h */,
+				2045BAE41B742B8B00A435D2 /* PFColor.m */,
+				2045BAE71B742B8B00A435D2 /* PFRect.h */,
+				2045BAE81B742B8B00A435D2 /* PFRect.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2060788E1B700FE00097D507 /* parse-library-1.7.5 */ = {
+			isa = PBXGroup;
+			children = (
+				206A55E41B70F85200B4C22F /* FacebookSDK.framework */,
+				2060788F1B700FE00097D507 /* Bolts.framework */,
+				206078901B700FE00097D507 /* Parse.framework */,
+				206078911B700FE00097D507 /* ParseCrashReporting.framework */,
+				206078921B700FE00097D507 /* ParseFacebookUtils.framework */,
+				206078931B700FE00097D507 /* ParseFacebookUtilsV4.framework */,
+				206078941B700FE00097D507 /* ParseUI.framework */,
+			);
+			path = "parse-library-1.7.5";
+			sourceTree = "<group>";
+		};
+		206078B31B70108A0097D507 /* Frameworkds */ = {
+			isa = PBXGroup;
+			children = (
+				2060788E1B700FE00097D507 /* parse-library-1.7.5 */,
+				206078B11B7010730097D507 /* Social.framework */,
+				206078AF1B70106D0097D507 /* Accounts.framework */,
+				206078AD1B70105E0097D507 /* libsqlite3.dylib */,
+				206078AB1B7010530097D507 /* libz.dylib */,
+				206078A91B7010490097D507 /* SystemConfiguration.framework */,
+				206078A71B70103F0097D507 /* StoreKit.framework */,
+				206078A51B7010350097D507 /* Security.framework */,
+				206078A31B70102D0097D507 /* QuartzCore.framework */,
+				206078A11B7010260097D507 /* CoreLocation.framework */,
+				2060789F1B70101F0097D507 /* CoreGraphics.framework */,
+				2060789D1B7010150097D507 /* CFNetwork.framework */,
+				2060789B1B70100E0097D507 /* AudioToolbox.framework */,
+			);
+			name = Frameworkds;
+			sourceTree = "<group>";
+		};
+		209128D91B6E86780072806F = {
+			isa = PBXGroup;
+			children = (
+				206078B31B70108A0097D507 /* Frameworkds */,
+				209128E41B6E86780072806F /* calorieApp */,
+				209129011B6E86780072806F /* calorieAppTests */,
+				209128E31B6E86780072806F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		209128E31B6E86780072806F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				209128E21B6E86780072806F /* calorieApp.app */,
+				209128FE1B6E86780072806F /* calorieAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		209128E41B6E86780072806F /* calorieApp */ = {
+			isa = PBXGroup;
+			children = (
+				20F5B1961B776DD1005391C1 /* Utils */,
+				20F5B1951B776AAE005391C1 /* Controllers */,
+				20A7E8291B7417E600FF749B /* Views */,
+				209128E51B6E86780072806F /* Supporting Files */,
+			);
+			path = calorieApp;
+			sourceTree = "<group>";
+		};
+		209128E51B6E86780072806F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				209128E91B6E86780072806F /* AppDelegate.h */,
+				209128EA1B6E86780072806F /* AppDelegate.m */,
+				206078BA1B7023CF0097D507 /* Todo List-50@2x.png */,
+				206078B81B7023C80097D507 /* Settings-50@2x.png */,
+				206078B61B7023C20097D507 /* Meal-50@2x.png */,
+				206078B41B70200A0097D507 /* empty-image.png */,
+				209128E61B6E86780072806F /* Info.plist */,
+				209128E71B6E86780072806F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		209129011B6E86780072806F /* calorieAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				209129041B6E86780072806F /* calorieAppTests.m */,
+				209129021B6E86780072806F /* Supporting Files */,
+			);
+			path = calorieAppTests;
+			sourceTree = "<group>";
+		};
+		209129021B6E86780072806F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				209129031B6E86780072806F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20A7E8291B7417E600FF749B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2045BAE01B742B8B00A435D2 /* Extensions */,
+				2045BAD01B742B5400A435D2 /* Buttons */,
+				209C501A1B72CB4D00589307 /* FirstCell.xib */,
+				209128F21B6E86780072806F /* Main.storyboard */,
+				209128F51B6E86780072806F /* Images.xcassets */,
+				209128F71B6E86780072806F /* LaunchScreen.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		20F5B1951B776AAE005391C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				209128EC1B6E86780072806F /* DailyGoalViewController.h */,
+				209128ED1B6E86780072806F /* DailyGoalViewController.m */,
+				206078BE1B702A4F0097D507 /* NewMealTableViewController.h */,
+				206078BF1B702A4F0097D507 /* NewMealTableViewController.m */,
+				206A562C1B71178000B4C22F /* MealsTableViewController.h */,
+				206A562D1B71178000B4C22F /* MealsTableViewController.m */,
+				20A7E8261B7417D500FF749B /* SettingsViewController.h */,
+				20A7E8271B7417D500FF749B /* SettingsViewController.m */,
+				2019D8B11B755F8C000703C2 /* UsersTableViewController.h */,
+				2019D8B21B755F8C000703C2 /* UsersTableViewController.m */,
+				20F5B1971B776E6D005391C1 /* FilterViewController.h */,
+				20F5B1981B776E6D005391C1 /* FilterViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		20F5B1961B776DD1005391C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				206A562F1B71298200B4C22F /* HelperFunctions.h */,
+				206A56301B71298200B4C22F /* HelperFunctions.m */,
+				20ECD7401B73F6C300536D47 /* Constants.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		209128E11B6E86780072806F /* calorieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209129081B6E86780072806F /* Build configuration list for PBXNativeTarget "calorieApp" */;
+			buildPhases = (
+				209128DE1B6E86780072806F /* Sources */,
+				209128DF1B6E86780072806F /* Frameworks */,
+				209128E01B6E86780072806F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = calorieApp;
+			productName = calorieApp;
+			productReference = 209128E21B6E86780072806F /* calorieApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		209128FD1B6E86780072806F /* calorieAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2091290B1B6E86780072806F /* Build configuration list for PBXNativeTarget "calorieAppTests" */;
+			buildPhases = (
+				209128FA1B6E86780072806F /* Sources */,
+				209128FB1B6E86780072806F /* Frameworks */,
+				209128FC1B6E86780072806F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				209129001B6E86780072806F /* PBXTargetDependency */,
+			);
+			name = calorieAppTests;
+			productName = calorieAppTests;
+			productReference = 209128FE1B6E86780072806F /* calorieAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		209128DA1B6E86780072806F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Curcio Jamunda";
+				TargetAttributes = {
+					209128E11B6E86780072806F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					209128FD1B6E86780072806F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 209128E11B6E86780072806F;
+					};
+				};
+			};
+			buildConfigurationList = 209128DD1B6E86780072806F /* Build configuration list for PBXProject "calorieApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 209128D91B6E86780072806F;
+			productRefGroup = 209128E31B6E86780072806F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				209128E11B6E86780072806F /* calorieApp */,
+				209128FD1B6E86780072806F /* calorieAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		209128E01B6E86780072806F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209128F41B6E86780072806F /* Main.storyboard in Resources */,
+				206078B91B7023C80097D507 /* Settings-50@2x.png in Resources */,
+				206078B51B70200A0097D507 /* empty-image.png in Resources */,
+				206078B71B7023C20097D507 /* Meal-50@2x.png in Resources */,
+				206078BB1B7023CF0097D507 /* Todo List-50@2x.png in Resources */,
+				209128F91B6E86780072806F /* LaunchScreen.xib in Resources */,
+				209C501B1B72CB4D00589307 /* FirstCell.xib in Resources */,
+				209128F61B6E86780072806F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209128FC1B6E86780072806F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		209128DE1B6E86780072806F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2045BADD1B742B5400A435D2 /* PFPrimaryButton.m in Sources */,
+				2045BAF61B742F0600A435D2 /* PFImage.m in Sources */,
+				20F5B1991B776E6D005391C1 /* FilterViewController.m in Sources */,
+				209128EB1B6E86780072806F /* AppDelegate.m in Sources */,
+				2045BAE91B742B8B00A435D2 /* PFAlertView.m in Sources */,
+				2045BAEA1B742B8B00A435D2 /* PFColor.m in Sources */,
+				209128EE1B6E86780072806F /* DailyGoalViewController.m in Sources */,
+				206A56311B71298200B4C22F /* HelperFunctions.m in Sources */,
+				2045BADB1B742B5400A435D2 /* PFActionButton.m in Sources */,
+				2045BAEC1B742B8B00A435D2 /* PFRect.m in Sources */,
+				2045BAF01B742E0E00A435D2 /* PFImageCache.m in Sources */,
+				2045BADF1B742B5400A435D2 /* PFLoadingView.m in Sources */,
+				2019D8B31B755F8C000703C2 /* UsersTableViewController.m in Sources */,
+				206A562E1B71178000B4C22F /* MealsTableViewController.m in Sources */,
+				2045BADE1B742B5400A435D2 /* PFTextButton.m in Sources */,
+				209128E81B6E86780072806F /* main.m in Sources */,
+				2045BAF31B742EEB00A435D2 /* PFResources.m in Sources */,
+				206078C01B702A4F0097D507 /* NewMealTableViewController.m in Sources */,
+				2045BADC1B742B5400A435D2 /* PFDismissButton.m in Sources */,
+				20A7E8281B7417D500FF749B /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209128FA1B6E86780072806F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209129051B6E86780072806F /* calorieAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		209129001B6E86780072806F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 209128E11B6E86780072806F /* calorieApp */;
+			targetProxy = 209128FF1B6E86780072806F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		209128F21B6E86780072806F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209128F31B6E86780072806F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		209128F71B6E86780072806F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209128F81B6E86780072806F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		209129061B6E86780072806F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		209129071B6E86780072806F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		209129091B6E86780072806F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = calorieApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2091290A1B6E86780072806F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = calorieApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2091290C1B6E86780072806F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = calorieAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calorieApp.app/calorieApp";
+			};
+			name = Debug;
+		};
+		2091290D1B6E86780072806F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = calorieAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calorieApp.app/calorieApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209128DD1B6E86780072806F /* Build configuration list for PBXProject "calorieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209129061B6E86780072806F /* Debug */,
+				209129071B6E86780072806F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209129081B6E86780072806F /* Build configuration list for PBXNativeTarget "calorieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209129091B6E86780072806F /* Debug */,
+				2091290A1B6E86780072806F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2091290B1B6E86780072806F /* Build configuration list for PBXNativeTarget "calorieAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2091290C1B6E86780072806F /* Debug */,
+				2091290D1B6E86780072806F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 209128DA1B6E86780072806F /* Project object */;
+}

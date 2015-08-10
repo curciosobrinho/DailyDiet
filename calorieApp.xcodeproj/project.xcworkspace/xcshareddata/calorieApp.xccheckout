@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>436C8AD8-A309-49D5-B93F-36CA555ECA12</string>
+	<key>IDESourceControlProjectName</key>
+	<string>calorieApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>97C60317BE01F96A137549413808208B20B0CB23</key>
+		<string>https://github.com/curciosobrinho/DailyDiet</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>calorieApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>97C60317BE01F96A137549413808208B20B0CB23</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/curciosobrinho/DailyDiet</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>97C60317BE01F96A137549413808208B20B0CB23</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97C60317BE01F96A137549413808208B20B0CB23</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DailyDiet</string>
+		</dict>
+	</array>
+</dict>
+</plist>
